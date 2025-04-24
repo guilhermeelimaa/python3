@@ -1,3 +1,5 @@
+from datetime import date
+
 # Dicionário de cores (ANSI escape codes)
 cores = {
     # Style
@@ -27,3 +29,20 @@ cores = {
     'bg_cinza': '\033[47m'
 }
 
+nascimento = int(input(f'{cores['bold']}Em qual ano você nasceu? {cores['reset']}'))
+
+ano = date.today().year
+idade = ano - nascimento
+
+print(f'{cores['cinza']} Você tem {idade} anos.')
+
+if idade <= 9:
+    print(f'{cores['azul']} Você irá disputar na categoria MIRIM {cores['reset']}')
+elif idade <= 14:
+    print(f'{cores['ciano']} Você irá disputar na categoria INFANTIL {cores['reset']}')
+elif idade <= 19:
+    print(f'{cores['magenta']} Você irá disputar na categoria JUNIOR {cores['reset']}')
+elif idade == 20:
+    print(f'{cores['amarelo']} Você irá disputar na categoria SÊNIOR {cores['reset']}')
+elif idade > 20:
+    print(f'{cores['verde']} Você irá disputar na categoria MASTER {cores['reset']}')
