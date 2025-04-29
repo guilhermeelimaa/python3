@@ -42,7 +42,7 @@ elif idade <= 14:
     print(f'{cores['ciano']} Você irá disputar na categoria INFANTIL {cores['reset']}')
 elif idade <= 19:
     print(f'{cores['magenta']} Você irá disputar na categoria JUNIOR {cores['reset']}')
-elif idade == 20:
+elif idade <= 25:
     print(f'{cores['amarelo']} Você irá disputar na categoria SÊNIOR {cores['reset']}')
-elif idade > 20:
+elif idade > 25:
     print(f'{cores['verde']} Você irá disputar na categoria MASTER {cores['reset']}')

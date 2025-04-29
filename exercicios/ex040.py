@@ -34,7 +34,7 @@ media = (n1 + n2) / 2
 
 if media < 5:
     print(f"{cores['vermelho']}Você foi REPROVADO, sua média é {media} {cores['reset']}")
-elif 5 <= media <= 6.9:  
+elif media >= 5 and media <= 6.9:
     print(f"{cores['amarelo']}Você está de RECUPERAÇÃO, sua média é {media} {cores['reset']}")
 elif media >= 7:
     print(f"{cores['verde']}PARABÉNS! Você foi APROVADO, sua média é {media} {cores['reset']}")
