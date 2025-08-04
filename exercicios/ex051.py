@@ -1,5 +1,5 @@
-n = float(input("Digite o primeiro termo da PA: "))
-r = float(input("Digite a razão da PA: "))
+n = int(input("Digite o primeiro termo da PA: "))
+r = int(input("Digite a razão da PA: "))
 
 # Calcula e mostra os 10 primeiros termos
 print("Os 10 primeiros termos da PA são:")
